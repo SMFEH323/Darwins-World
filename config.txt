@@ -1,0 +1,7 @@
+flytrap F yellow
+rover R green
+hopper H blue
+food O red
+robot-creepingdeath C magenta
+robot-landmine L orange
+robot-SE S teal

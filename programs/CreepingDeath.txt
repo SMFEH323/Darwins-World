@@ -1,0 +1,51 @@
+0 ifenemy 2         basic infection loop   (1)
+1 go 4
+2 infect
+3 go 0
+4 ifenemy 0         spin looking for something to infect  (5)
+5 left
+6 ifenemy 0
+7 left
+8 ifenemy 0
+9 left
+10 ifenemy 0
+11 ifsame 33  xxx        spin looking for your own species to clump (12)
+12 left
+13 ifenemy 0
+14 ifsame 33  xxx
+15 left
+16 ifenemy 0
+17 ifsame 33  xxx
+18 left
+19 ifenemy 0
+20 ifsame 33  xxx RANDOM:r this is the randomizer creature (21)
+21 ifenemy 0
+22 ifwall 28  r+8   
+23 ifrandom 26   r+6
+24 left
+25 go 20  r
+26 hop
+27 go 20  r
+28 left           
+29 ifenemy 0      about face routine when hit wall
+30 ifsame 33   L
+31 left
+32 go 20
+33 ifenemy 0      LAND MINE:L  (34)
+34 ifempty 37  L+4
+35 left
+36 go 33
+37 infect
+38 ifrandom 33
+39 ifrandom 33
+40 ifrandom 33
+41 ifrandom 33
+42 ifrandom 33
+43 ifrandom 33
+44 go 0  every once in a while, the land mine regresses
+45 halt
+
+Creeping Death -- Nick Parlante, 1991
+The idea is to combine the advantages of the rover and the land mine.
+Use roving behavior to get food and to find other Creeping Deaths.
+Then try to clump together and face outward.

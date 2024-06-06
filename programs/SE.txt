@@ -1,0 +1,20 @@
+0 ifwall 5
+1 ifsame 5
+2 ifenemy 10
+3 ifempty 9
+4 go 0
+5 ifrandom 7
+6 ifrandom 8
+7 left
+8 right
+9 ifrandom 7
+10 ifrandom 12
+11 ifrandom 8
+12 hop
+13 infect
+14 go 0
+15 ifrandom 13
+16 ifrandom 12
+17 ifrandom 13
+18 go 0
+19 halt
